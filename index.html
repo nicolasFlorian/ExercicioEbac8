@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechBlog</title>
+        <link rel="stylesheet" href="./lib/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script defer src="./index.js"></script>
+        <script defer src="./lib/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-4">
+            <div class="container">
+                <h1 class="section-title white m-0"><span class="fw-light">Tech</span><span class="fw-bold">Blog</span></h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-md-flex mt-3 mt-lg-0">
+                        <li class="nav-item fw-bold">
+                            <a href="#sobre-restaurante" class="nav-link">
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre o TechBlog
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#eventos" class="nav-link">
+                                <i class="bi bi-credit-card me-1"></i>
+                                Planos
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#cardapio" class="nav-link">
+                                <i class="bi bi-card-text me-1"></i>
+                                Posts
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#fale-conosco" class="nav-link">
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+            <section id="sobre-restaurante">
+                <div class="carousel slide" data-bs-ride="carousel" id="main-carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="images/office/1.png" alt="Foto do espaço interno" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="images/office/2.png" alt="Foto do espaço interno" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button  class="active" type="button" data-bs-target="#main-carousel" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1"></button>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="images/office/3.png" alt="foto do espaço interno" class="d-block w-100 rounded">
+                            </div>
+                            <div class="col-md-7 mt-3 mt-md-0">
+                                <h2 class="section-title">Sobre <span class="blue">o TechBlog</span></h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem provident recusandae debitis impedit dignissimos quae perferendis minima suscipit ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, repellat.</p>
+                                <h3 class="section-title">Nosso <span class="blue">espaço</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus molestiae quas est architecto deserunt. Voluptas, quas! Id, dolores similique!</p>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="eventos" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row mb-5">
+                        <h2 class="text-center section-title">Planos de <span class="blue">assinatura</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <h3 class="m-0">Standard</h3>
+                                    <p class="mb-1">(Mensal)</p>
+                                </div>
+                                <img src="images/plans/standard.jpeg" alt="" class="d-block w-100">
+                                <div class="card-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo vero fuga autem vitae, assumenda ipsam quidem labore repudiandae pariatur.</p>
+                                    <p class="fs-5">R$ 9,99</p>
+                                    <button class="btn btn-success d-block w-100 fw-bold">Assinar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <h3 class="m-0">Medium</h3>
+                                    <p class="mb-1">(Mensal)</p>
+                                </div>
+                                <img src="images/plans/medium.jpeg" alt="" class="d-block w-100">
+                                <div class="card-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo vero fuga autem vitae, assumenda ipsam quidem labore repudiandae pariatur.</p>
+                                    <p class="fs-5">R$ 19,99</p>
+                                    <button class="btn btn-success d-block w-100 fw-bold">Assinar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <h3 class="m-0">Premium</h3>
+                                    <p class="mb-1">(Mensal)</p>
+                                </div>
+                                <img src="images/plans/premium.jpeg" alt="" class="d-block w-100">
+                                <div class="card-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo vero fuga autem vitae, assumenda ipsam quidem labore repudiandae pariatur.</p>
+                                    <p class="fs-5">R$ 29,99</p>
+                                    <button class="btn btn-success d-block w-100 fw-bold">Assinar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cardapio" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5">Últimos <span class="blue">posts</span></h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-3">
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#geral" class="nav-link fw-bold text-start blue active">
+                                    Geral
+                                </button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#dispositivos" class="nav-link fw-bold text-start blue">
+                                    Dispositivos
+                                </button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#IA" class="nav-link fw-bold text-start blue">
+                                    IA
+                                </button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#softwere" class="nav-link fw-bold text-start blue">
+                                    Softwere
+                                </button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-9">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="geral">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/particles.jpeg" alt="Um acelerador de particulas" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/particles.jpeg" alt="Um acelerador de particulas" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/particles.jpeg" alt="Um acelerador de particulas" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="dispositivos">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/drone.jpeg" alt="Um drone" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/drone.jpeg" alt="Um drone" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/drone.jpeg" alt="Um drone" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="IA">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/robot.jpeg" alt="Um robo em construção" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/robot.jpeg" alt="Um robo em construção" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/robot.jpeg" alt="Um robo em construção" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="softwere">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/coding.jpeg" alt="Um homem programando" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/coding.jpeg" alt="Um homem programando" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <img src="images/posts/coding.jpeg" alt="Um homem programando" class="rounded-top">
+                                                <div class="card-body">
+                                                    <h5 class="fw-bold">Lorem, ipsum dolor.</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="btn m-0 p-0 blue">Ler mais</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="fale-conosco" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5">Fale <span class="blue">conosco</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold">Seu nome:</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold">Seu email:</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold">Seu telefone: (opcional)</label>
+                                    <input type="tel" id="telefone" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold">Sua mensagem:</label>
+                                    <textarea class="form-control" id="mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn fw-bold">
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes Sociais
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook blue"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-instagram blue ms-1 me-1"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-youtube blue"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 ">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Enderço
+                                </h3>
+                                <p>
+                                    Rua Teste Exemplo nª 145, Bairro Bootstrap - São Paulo - SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+
+</html>
